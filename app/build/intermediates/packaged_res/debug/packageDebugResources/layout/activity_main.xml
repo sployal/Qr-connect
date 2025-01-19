@@ -1,0 +1,248 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:background="#649AA3">
+
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan QR Code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:onClick="animateButton" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnScan"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#333"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtResult"
+        android:layout_marginTop="20dp"
+        android:hint="Type your message here"
+        android:padding="10dp"
+        android:background="@drawable/edittext_bg" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:layout_below="@id/editTextMessage"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:onClick="animateButton" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSend"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCopy"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:onClick="animateButton"
+                android:padding="10dp"
+                android:text="Copy"
+                android:textSize="22sp"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btnPaste"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:onClick="animateButton"
+                android:padding="10dp"
+                android:text="Paste"
+                android:textSize="22sp"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSwitchTabs"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:onClick="animateButton"
+                android:padding="10dp"
+                android:text="Switch Tabs"
+                android:textSize="22sp"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btnLockPC"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:onClick="animateButton"
+                android:padding="10dp"
+                android:text="Overview"
+                android:textSize="22sp"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHibernatePC"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:onClick="animateButton"
+                android:padding="10dp"
+                android:text="Hibernate"
+                android:textSize="22sp"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btnShortcut6"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:onClick="animateButton"
+                android:padding="10dp"
+                android:text="Screenshot"
+                android:textSize="22sp"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnbackspace"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:onClick="animateButton"
+                android:padding="10dp"
+                android:text="Backspace"
+                android:textSize="22sp"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:onClick="animateButton"
+                android:padding="10dp"
+                android:text="Delete"
+                android:textSize="22sp"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRight"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:onClick="animateButton"
+                android:padding="10dp"
+                android:text="Right"
+                android:textSize="22sp"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btnLeft"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:onClick="animateButton"
+                android:padding="10dp"
+                android:text="Left"
+                android:textSize="22sp"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="222dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/button_bg"
+        android:onClick="animateButton"
+        android:padding="10dp"
+        android:text="Enter"
+        android:textSize="27sp"
+        android:textColor="#fff" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable button_bg
+drawable edittext_bg
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnCopy
+id btnDelete
+id btnEnter
+id btnHibernatePC
+id btnLeft
+id btnLockPC
+id btnPaste
+id btnRight
+id btnScan
+id btnSend
+id btnShortcut6
+id btnSwitchTabs
+id btnbackspace
+id editTextMessage
+id linearLayout
+id txtResult
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.QrConnect
+style Theme.QrConnect
+xml backup_rules
+xml data_extraction_rules
